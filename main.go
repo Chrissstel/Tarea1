@@ -9,6 +9,7 @@ func main() {
 
 	//IMPLEMENTACIÓN DE STACK
 	stack := estructuras.NewStack()
+	fmt.Println("\nStack demo")
 	fmt.Println("is it empty?", stack.IsEmpty())
 
 	stack.Push(5)
@@ -28,4 +29,21 @@ func main() {
 	fmt.Println("top element:", top)
 
 	//IMPLEMENTACIÓN DE QUEUE
+	queue := estructuras.NewQueue()
+	fmt.Println("\nQueue demo")
+
+	queue.Enqueue(10)
+	queue.Enqueue(20)
+	queue.Enqueue(30)
+
+	front, _ := queue.Peek()
+	fmt.Println("Front:", front)
+	val, _ = queue.Dequeue()
+	fmt.Println("Dequeued:", val)
+	val, _ = queue.Dequeue()
+	fmt.Println("Dequeued:", val)
+
+	fmt.Println("Is empty?", queue.IsEmpty())
+
+	//IMPLEMENETACIÓN DICTIONARY
 }
