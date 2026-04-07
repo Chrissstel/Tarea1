@@ -42,3 +42,25 @@ TestDequeueEmptyQueue
 
 
 TEST CASES DE DICTIONARY
+
+TestDictionaryPutGet
+- Insertar elementos en el dictionary usando Put.
+- Verificar que Get() regrese el valor correcto asociado a la clave.
+
+TestDictionaryUpdateValue
+- Insertar un par clave-valor en el dictionary.
+- Insertar la misma clave nuevamente con un valor diferente.
+- Verificar que el valor asociado a la clave se actualice correctamente.
+
+TestDictionaryRemove
+- Insertar múltiples pares clave-valor en el dictionary.
+- Eliminar una clave usando Remove.
+- Verificar que la clave ya no exista en el dictionary.
+
+TestDictionaryContains
+- Insertar elementos en el dictionary.
+- Verificar que Contains() regrese true para claves existentes y false para claves que no existen.
+
+TestDictionarySize
+- Insertar múltiples elementos en el dictionary.
+- Verificar que Size() regrese el número correcto de elementos almacenados en el dictionary.

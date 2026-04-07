@@ -46,4 +46,18 @@ func main() {
 	fmt.Println("Is empty?", queue.IsEmpty())
 
 	//IMPLEMENETACIÓN DICTIONARY
+	dict := estructuras.NewDictionary()
+	fmt.Println("\nDictionary demo")
+
+	dict.Put("age", 21)
+	dict.Put("year", 2026)
+
+	value, ok := dict.Get("age")
+	if ok {
+		fmt.Println("age:", value)
+	}
+
+	fmt.Println("Contains 'year'?", dict.Contains("year"))
+	dict.Remove("year")
+	fmt.Println("Size:", dict.Size())
 }
